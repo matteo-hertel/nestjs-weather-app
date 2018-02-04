@@ -14,7 +14,7 @@ export class WeatherService {
     });
   }
 
-  async ofCity(city: string): object {
+  async forCity(city: string): object {
     const response = await this.client.get("weather", {
       params: { q: city }
     });
