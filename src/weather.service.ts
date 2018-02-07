@@ -7,7 +7,7 @@ export class WeatherService {
 
   constructor() {
     this.client = axios.create({
-      baseUrl: "https://api.openweathermap.org/data/2.5/",
+      baseURL: "https://api.openweathermap.org/data/2.5/",
       params: {
         APPID: process.env.API_KEY
       }

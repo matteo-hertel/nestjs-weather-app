@@ -7,7 +7,7 @@ export class WeatherController {
 
   @Get()
   async root(): Promise<object> {
-    const response = await this.weatherService.forCity("New York");
+    const response = await this.weatherService.forCity("London");
     return response;
   }
 }
